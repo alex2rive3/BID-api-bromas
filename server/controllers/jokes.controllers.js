@@ -9,7 +9,9 @@ module.exports.findOneJokes = async (req, res) => {
     res.json({ result: "ok", theJoker: oneJokes })
 }
 module.exports.jokeRandom = async (req, res) => {
-    const randomJoke = await Jokes.agreagate().sample(1)
+    const count = await Jokes.find().count();
+    let r = await Math.floor(Math.random() * count);
+    const randomJoke = await Jokes.findOne().skip(r);
     res.json({ result: "ok", random: randomJoke })
 }
 
@@ -25,3 +27,5 @@ module.exports.deleteJoke = async (req, res) => {
     const jokeDelete = await Jokes.deleteOne({ _id: req.params.id })
     res.json({ result: "ok", delele: jokeDelete })
 }
+
+
