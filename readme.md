@@ -2,7 +2,7 @@
 
 Para solidificar lo que hemos aprendido sobre comandos de mongoose y express, creemos un nuevo proyecto express desde cero llamado "Chistes".
 
-[imagen de apoyo](https://s3.amazonaws.com/General_V88/boomyeah2015/codingdojo/curriculum/content/chapter/JokeAPI_%282%29.png)
+![imagen de apoyo](https://s3.amazonaws.com/General_V88/boomyeah2015/codingdojo/curriculum/content/chapter/JokeAPI_%282%29.png)
 
 ## Indicaciones a seguir
 
